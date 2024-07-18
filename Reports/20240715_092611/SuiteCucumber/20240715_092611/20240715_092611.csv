@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SuiteCucumber,Chrome 126.0.0.0,,,15-07-2024 09:26:17,15-07-2024 09:27:20,1m - 3.070s,FAILED
+,,,,,,,
+Test Cases/CucumberTest,Chrome 126.0.0.0,,,15-07-2024 09:27:11,15-07-2024 09:27:20,8.708s,FAILED
+Start listener action : setup,Chrome 126.0.0.0,,,15-07-2024 09:27:11,15-07-2024 09:27:11,0.001s,PASSED
+"runFeatureFile(""Include/features/Appointment/Appointment.feature"")",Chrome 126.0.0.0,,,15-07-2024 09:27:11,15-07-2024 09:27:20,8.547s,FAILED
+Start listener action : after,Chrome 126.0.0.0,,,15-07-2024 09:27:20,15-07-2024 09:27:20,0.152s,PASSED

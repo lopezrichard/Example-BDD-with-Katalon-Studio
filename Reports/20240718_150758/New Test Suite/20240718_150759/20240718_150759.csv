@@ -1,0 +1,5 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Test Suite,,,,18-07-2024 15:08:03,18-07-2024 15:08:03,0.413s,FAILED
+,,,,,,,
+Test Cases/CucumberTest,,,,18-07-2024 15:08:03,18-07-2024 15:08:03,0.359s,FAILED
+"runFeatureFile(""Include/features/Appointment/Appointment.feature"")",,,,18-07-2024 15:08:03,18-07-2024 15:08:03,0.299s,FAILED

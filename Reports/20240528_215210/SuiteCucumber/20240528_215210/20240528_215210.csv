@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SuiteCucumber,Chrome 125.0.0.0,,,28-05-2024 21:52:14,28-05-2024 21:52:32,18.021s,PASSED
+,,,,,,,
+Test Cases/CucumberTest,Chrome 125.0.0.0,,,28-05-2024 21:52:14,28-05-2024 21:52:32,17.966s,PASSED
+Start listener action : setup,Chrome 125.0.0.0,,,28-05-2024 21:52:14,28-05-2024 21:52:14,0.029s,PASSED
+"runFeatureFolderWithTags(""Include/features/LoginFeatures"", ""@ID_01"")",Chrome 125.0.0.0,,,28-05-2024 21:52:14,28-05-2024 21:52:31,17.787s,PASSED
+Start listener action : after,Chrome 125.0.0.0,,,28-05-2024 21:52:31,28-05-2024 21:52:32,0.104s,PASSED

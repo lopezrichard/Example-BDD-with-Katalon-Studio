@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Test Suite,Chrome 126.0.0.0,,,17-07-2024 18:02:45,17-07-2024 18:02:57,11.361s,PASSED
+,,,,,,,
+Test Cases/New Test Case,Chrome 126.0.0.0,,,17-07-2024 18:02:45,17-07-2024 18:02:57,11.308s,PASSED
+"openBrowser(""https://katalon-demo-cura.herokuapp.com/"")",Chrome 126.0.0.0,,,17-07-2024 18:02:45,17-07-2024 18:02:49,4.129s,PASSED
+"click(findTestObject(""Appointment/Make Appointment Button""))",Chrome 126.0.0.0,,,17-07-2024 18:02:49,17-07-2024 18:02:50,0.604s,PASSED
+"setText(findTestObject(""Object Repository/Appointment/User Input""), ""John Doe"")",Chrome 126.0.0.0,,,17-07-2024 18:02:50,17-07-2024 18:02:51,0.687s,PASSED
+"setText(findTestObject(""Object Repository/Appointment/Password Input""), ""ThisIsNotAPassword"")",Chrome 126.0.0.0,,,17-07-2024 18:02:51,17-07-2024 18:02:51,0.502s,PASSED
+"click(findTestObject(""Object Repository/Appointment/Login button""))",Chrome 126.0.0.0,,,17-07-2024 18:02:51,17-07-2024 18:02:52,0.686s,PASSED
+"takeFullPageScreenshotAsCheckpoint(""current_viewport"")",Chrome 126.0.0.0,,,17-07-2024 18:02:52,17-07-2024 18:02:54,2.130s,PASSED
+"click(findTestObject(""Object Repository/Appointment/Calendar Button""))",Chrome 126.0.0.0,,,17-07-2024 18:02:54,17-07-2024 18:02:54,0.261s,PASSED
+"click(findTestObject(""Object Repository/Appointment/Select Day""))",Chrome 126.0.0.0,,,17-07-2024 18:02:54,17-07-2024 18:02:55,0.469s,PASSED
+"setText(findTestObject(""Object Repository/Appointment/Comment Input""), ""Test Comentario"")",Chrome 126.0.0.0,,,17-07-2024 18:02:55,17-07-2024 18:02:56,0.723s,PASSED
+"click(findTestObject(""Object Repository/Appointment/Book Appointment Button""))",Chrome 126.0.0.0,,,17-07-2024 18:02:56,17-07-2024 18:02:56,0.591s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Appointment/Appointment Confirmation""), 20)",Chrome 126.0.0.0,,,17-07-2024 18:02:56,17-07-2024 18:02:57,0.463s,PASSED

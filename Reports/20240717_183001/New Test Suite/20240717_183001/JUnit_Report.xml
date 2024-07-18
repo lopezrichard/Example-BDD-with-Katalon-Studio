@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="New Test Suite" time="18.351" tests="1" failures="0" errors="0">
+   <testsuite name="New Test Suite" tests="1" failures="0" errors="0" time="18.351" skipped="0" timestamp="17-07-2024T18:30:06" hostname="richard - localhost" id="Test Suites/New Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="/Users/richard/Katalon Studio/BDD Example/Reports/20240717_183001/New Test Suite/20240717_183001"/>
+         <property name="logFiles" value="/Users/richard/Katalon Studio/BDD Example/Reports/20240717_183001/New Test Suite/20240717_183001/execution0.log"/>
+         <property name="attachments" value="keyes/keyes-current_viewport.png"/>
+         <property name="hostName" value="richard - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.6.0.217"/>
+         <property name="browser" value="Chrome 126.0.0.0"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="e410ca909a73795c6288f40bb7adf3fe"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/New Test Case" time="18.267" classname="Test Cases/New Test Case" status="PASSED">
+         <system-out><![CDATA[17-07-2024T18:30:06 - [TEST_CASE][PASSED] - Test Cases/New Test Case: Test Cases/New Test Case
+
+17-07-2024T18:30:06 - [TEST_STEP][PASSED] - openBrowser("https://katalon-demo-cura.herokuapp.com/"): Browser is opened with url: 'https://katalon-demo-cura.herokuapp.com/'
+
+17-07-2024T18:30:06 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+17-07-2024T18:30:06 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+17-07-2024T18:30:17 - [MESSAGE][PASSED] - Browser is opened with url: 'https://katalon-demo-cura.herokuapp.com/'
+
+17-07-2024T18:30:17 - [TEST_STEP][PASSED] - click(findTestObject("Appointment/Make Appointment Button")): Object: 'Object Repository/Appointment/Make Appointment Button' is clicked on
+
+17-07-2024T18:30:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Appointment/Make Appointment Button' is clicked on
+
+17-07-2024T18:30:18 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Appointment/User Input"), "John Doe"): Text 'John Doe' is set on object 'Object Repository/Appointment/User Input'
+
+17-07-2024T18:30:18 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Appointment/User Input'
+
+17-07-2024T18:30:18 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Appointment/Password Input"), "ThisIsNotAPassword"): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Appointment/Password Input'
+
+17-07-2024T18:30:19 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Appointment/Password Input'
+
+17-07-2024T18:30:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Appointment/Login button")): Object: 'Object Repository/Appointment/Login button' is clicked on
+
+17-07-2024T18:30:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Appointment/Login button' is clicked on
+
+17-07-2024T18:30:20 - [TEST_STEP][PASSED] - takeFullPageScreenshotAsCheckpoint("current_viewport"): Taking screenshot successfully
+
+17-07-2024T18:30:21 - [MESSAGE][INFO] - 0 hidden object(s)
+
+17-07-2024T18:30:22 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|keyes/keyes-current_viewport.png]]
+
+17-07-2024T18:30:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Appointment/Calendar Button")): Object: 'Object Repository/Appointment/Calendar Button' is clicked on
+
+17-07-2024T18:30:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Appointment/Calendar Button' is clicked on
+
+17-07-2024T18:30:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Appointment/Select Day")): Object: 'Object Repository/Appointment/Select Day' is clicked on
+
+17-07-2024T18:30:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Appointment/Select Day' is clicked on
+
+17-07-2024T18:30:23 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Appointment/Comment Input"), "Test Comentario"): Text 'Test Comentario' is set on object 'Object Repository/Appointment/Comment Input'
+
+17-07-2024T18:30:23 - [MESSAGE][PASSED] - Text 'Test Comentario' is set on object 'Object Repository/Appointment/Comment Input'
+
+17-07-2024T18:30:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Appointment/Book Appointment Button")): Object: 'Object Repository/Appointment/Book Appointment Button' is clicked on
+
+17-07-2024T18:30:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Appointment/Book Appointment Button' is clicked on
+
+17-07-2024T18:30:24 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Appointment/Appointment Confirmation"), 20): Object 'Object Repository/Appointment/Appointment Confirmation' is present
+
+17-07-2024T18:30:24 - [MESSAGE][PASSED] - Object 'Object Repository/Appointment/Appointment Confirmation' is present]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[17-07-2024T18:30:06 - [TEST_SUITE][PASSED] - New Test Suite: Test Cases/New Test Case]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
