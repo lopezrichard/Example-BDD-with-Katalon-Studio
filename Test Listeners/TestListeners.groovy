@@ -27,15 +27,14 @@ import com.kms.katalon.core.context.TestSuiteContext
 import com.kms.katalon.core.cucumber.keyword.internal.CucumberGlueGenerator
 
 class TestListeners {
-	/*@BeforeTestCase
+	@BeforeTestCase
 	def setup() {
 		CucumberGlueGenerator.addDefaultPackages();
-		WebUI.openBrowser('https://katalon-demo-cura.herokuapp.com/')
 		
 	}
 	@AfterTestCase
 	void after() {
 		WebUI.closeBrowser()
 	
-	}*/
+	}
 }

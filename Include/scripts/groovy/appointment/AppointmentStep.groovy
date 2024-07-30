@@ -28,6 +28,7 @@ public class AppointmentStep {
 
 	@Given ("que nuesto cliente ingresa correctamente a nuestra plataforma (.*) (.*)")
 	def RealizarLoginEnLaPlataforma(String user, String password) {
+		WebUI.openBrowser('https://katalon-demo-cura.herokuapp.com/')
 		WebUI.click(findTestObject('Appointment/Make Appointment Button'))
 		WebUI.setText(findTestObject('Object Repository/Appointment/User Input'), user)
 		WebUI.setText(findTestObject('Object Repository/Appointment/Password Input'), password)

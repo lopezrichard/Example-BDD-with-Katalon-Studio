@@ -26,9 +26,13 @@ WebUI.setText(findTestObject('Object Repository/Appointment/User Input'), 'John 
 
 WebUI.setText(findTestObject('Object Repository/Appointment/Password Input'), 'ThisIsNotAPassword')
 
-WebUI.takeScreenshotAsCheckpoint('current_viewport')
+WebUI.takeScreenshotAsCheckpoint('full_view-2', FailureHandling.CONTINUE_ON_FAILURE)
+
 
 WebUI.click(findTestObject('Object Repository/Appointment/Login button'))
+
+WebUI.takeFullPageScreenshotAsCheckpoint('current_viewport-2')
+
 
 WebUI.click(findTestObject('Object Repository/Appointment/Calendar Button'))
 

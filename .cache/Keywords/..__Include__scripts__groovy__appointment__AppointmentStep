@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "D083706EDCF21552D5A14D2B6D6AE4DA",
+  "keywordClasses": [
+    {
+      "name": "appointment.AppointmentStep",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": false
+}

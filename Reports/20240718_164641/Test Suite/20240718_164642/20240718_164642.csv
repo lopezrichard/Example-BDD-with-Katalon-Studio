@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test Suite,Chrome 126.0.0.0,,,18-07-2024 16:46:46,18-07-2024 16:46:57,11.143s,PASSED
+,,,,,,,
+Test Cases/Test,Chrome 126.0.0.0,,,18-07-2024 16:46:46,18-07-2024 16:46:57,11.094s,PASSED
+"openBrowser(""https://katalon-demo-cura.herokuapp.com/"")",Chrome 126.0.0.0,,,18-07-2024 16:46:46,18-07-2024 16:46:50,3.988s,PASSED
+"click(findTestObject(""Appointment/Make Appointment Button""))",Chrome 126.0.0.0,,,18-07-2024 16:46:50,18-07-2024 16:46:51,0.601s,PASSED
+"setText(findTestObject(""Object Repository/Appointment/User Input""), ""John Doe"")",Chrome 126.0.0.0,,,18-07-2024 16:46:51,18-07-2024 16:46:51,0.673s,PASSED
+"setText(findTestObject(""Object Repository/Appointment/Password Input""), ""ThisIsNotAPassword"")",Chrome 126.0.0.0,,,18-07-2024 16:46:51,18-07-2024 16:46:52,0.499s,PASSED
+"takeScreenshotAsCheckpoint(""full_view"", CONTINUE_ON_FAILURE)",Chrome 126.0.0.0,,,18-07-2024 16:46:52,18-07-2024 16:46:52,0.535s,PASSED
+"click(findTestObject(""Object Repository/Appointment/Login button""))",Chrome 126.0.0.0,,,18-07-2024 16:46:52,18-07-2024 16:46:53,0.797s,PASSED
+"takeFullPageScreenshotAsCheckpoint(""current_viewport"")",Chrome 126.0.0.0,,,18-07-2024 16:46:53,18-07-2024 16:46:55,1.546s,PASSED
+"click(findTestObject(""Object Repository/Appointment/Calendar Button""))",Chrome 126.0.0.0,,,18-07-2024 16:46:55,18-07-2024 16:46:55,0.259s,PASSED
+"click(findTestObject(""Object Repository/Appointment/Select Day""))",Chrome 126.0.0.0,,,18-07-2024 16:46:55,18-07-2024 16:46:56,0.467s,PASSED
+"setText(findTestObject(""Object Repository/Appointment/Comment Input""), ""Test Comentario"")",Chrome 126.0.0.0,,,18-07-2024 16:46:56,18-07-2024 16:46:56,0.714s,PASSED
+"click(findTestObject(""Object Repository/Appointment/Book Appointment Button""))",Chrome 126.0.0.0,,,18-07-2024 16:46:56,18-07-2024 16:46:57,0.470s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Appointment/Appointment Confirmation""), 20)",Chrome 126.0.0.0,,,18-07-2024 16:46:57,18-07-2024 16:46:57,0.472s,PASSED

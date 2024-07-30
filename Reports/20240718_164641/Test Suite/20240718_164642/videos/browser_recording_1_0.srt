@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:00,000
+1. openBrowser("https://katalon-demo-cura.herokuapp.com/")
+
+2
+00:00:00,000 --> 00:00:00,000
+5. click(findTestObject("Appointment/Make Appointment Button"))
+
+3
+00:00:00,000 --> 00:00:00,000
+9. setText(findTestObject("Object Repository/Appointment/User Input"), "John Doe")
+
+4
+00:00:00,000 --> 00:00:00,000
+13. setText(findTestObject("Object Repository/Appointment/Password Input"), "ThisIsNotAPassword")
+
+5
+00:00:00,000 --> 00:00:00,000
+17. takeScreenshotAsCheckpoint("full_view", CONTINUE_ON_FAILURE)
+
+6
+00:00:00,000 --> 00:00:00,000
+21. click(findTestObject("Object Repository/Appointment/Login button"))
+
+7
+00:00:00,000 --> 00:00:00,000
+25. takeFullPageScreenshotAsCheckpoint("current_viewport")
+
+8
+00:00:00,000 --> 00:00:00,000
+29. click(findTestObject("Object Repository/Appointment/Calendar Button"))
+
+9
+00:00:00,000 --> 00:00:00,000
+33. click(findTestObject("Object Repository/Appointment/Select Day"))
+
+10
+00:00:00,000 --> 00:00:00,000
+37. setText(findTestObject("Object Repository/Appointment/Comment Input"), "Test Comentario")
+
+11
+00:00:00,000 --> 00:00:00,000
+41. click(findTestObject("Object Repository/Appointment/Book Appointment Button"))
+
+12
+00:00:00,000 --> 00:00:00,000
+45. verifyElementPresent(findTestObject("Object Repository/Appointment/Appointment Confirmation"), 20)
+

@@ -11,7 +11,7 @@
    <modifiedEdition>ENTERPRISE</modifiedEdition>
    <modifiedVersion>9.6.0</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>/Users/richard/Katalon Studio/BDD Example/BDD Example.prj</projectFileLocation>
+   <projectFileLocation>/Users/richard/Example-BDD-with-Katalon-Studio/BDD Example.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
