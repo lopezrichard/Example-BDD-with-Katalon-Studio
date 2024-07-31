@@ -21,25 +21,20 @@ import org.openqa.selenium.Keys as Keys
 WebUI.openBrowser('https://katalon-demo-cura.herokuapp.com/')
 
 WebUI.click(findTestObject('Appointment/Make Appointment Button'))
-
 WebUI.setText(findTestObject('Object Repository/Appointment/User Input'), 'John Doe')
-
 WebUI.setText(findTestObject('Object Repository/Appointment/Password Input'), 'ThisIsNotAPassword')
 
+// Toma la captura de pantalla y la compara con la colección de línea base con ID 2
 WebUI.takeScreenshotAsCheckpoint('full_view-2', FailureHandling.CONTINUE_ON_FAILURE)
-
 
 WebUI.click(findTestObject('Object Repository/Appointment/Login button'))
 
-WebUI.takeFullPageScreenshotAsCheckpoint('current_viewport-2')
-
+// Toma la captura de pantalla completa de la página y la compara con la colección de línea base con ID 2
+WebUI.takeFullPageScreenshotAsCheckpoint('current_viewport-2', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Appointment/Calendar Button'))
-
 WebUI.click(findTestObject('Object Repository/Appointment/Select Day'))
-
 WebUI.setText(findTestObject('Object Repository/Appointment/Comment Input'), 'Test Comentario')
-
 WebUI.click(findTestObject('Object Repository/Appointment/Book Appointment Button'))
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Appointment/Appointment Confirmation'), 20)
