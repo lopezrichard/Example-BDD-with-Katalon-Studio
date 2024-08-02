@@ -24,12 +24,10 @@ WebUI.click(findTestObject('Appointment/Make Appointment Button'))
 WebUI.setText(findTestObject('Object Repository/Appointment/User Input'), 'John Doe')
 WebUI.setText(findTestObject('Object Repository/Appointment/Password Input'), 'ThisIsNotAPassword')
 
-// Toma la captura de pantalla y la compara con la colección de línea base con ID 2
 WebUI.takeScreenshotAsCheckpoint('full_view-2', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Appointment/Login button'))
 
-// Toma la captura de pantalla completa de la página y la compara con la colección de línea base con ID 2
 WebUI.takeFullPageScreenshotAsCheckpoint('current_viewport-2', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Appointment/Calendar Button'))
