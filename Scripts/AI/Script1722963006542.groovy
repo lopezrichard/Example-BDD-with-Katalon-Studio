@@ -22,12 +22,40 @@ import org.openqa.selenium.Keys as Keys
  * 2. Haz clic en el botón 'Make Appointment' ubicado en 'Object Repository/Appointment/Make Appointment Button'
  * 3. Llena el campo de nombre de usuario con el texto 'John Doe' ubicado en 'Object Repository/Appointment/User Input'
  * 4. Llena el campo de contraseña del usuario con el texto 'ThisIsNotAPassword' ubicado en 'Object Repository/Appointment/Password Input'
- * 5. Toma una captura de pantalla con el nombre de punto de control 'full_view-2' y continúa en caso de fallo
- * 6. Haz clic en el botón 'Login' ubicado en 'Object Repository/Appointment/Login Button'
- * 7. Toma una captura de pantalla de página completa con el nombre de punto de control 'current_viewport-2' y continúa en caso de fallo
- * 8. Haz clic en el calendario ubicado en 'Object Repository/Appointment/Calendar Button'
- * 9. Selecciona el día del calendario ubicado en 'Object Repository/Appointment/Select Day'
- * 10. Llena el campo de comentarios con el texto 'Test Comentario' ubicado en 'Object Repository/Appointment/Comment Input'
- * 11. Haz clic en el botón 'Book Appointment' ubicado en 'Object Repository/Appointment/Book Appointment Button'
- * 12. Verifica que el div de confirmación de la cita esté presente ubicado en 'Object Repository/Appointment/Appointment Confirmation' con una espera de 10 segundos
-*/
+ * 5. Haz clic en el botón 'Login' ubicado en 'Object Repository/Appointment/Login Button'
+ * 6. Haz clic en el calendario ubicado en 'Object Repository/Appointment/Calendar Button'
+ * 7. Selecciona el día del calendario ubicado en 'Object Repository/Appointment/Select Day'
+ * 8. Llena el campo de comentarios con el texto 'Test Comentario' ubicado en 'Object Repository/Appointment/Comment Input'
+ * 9. Haz clic en el botón 'Book Appointment' ubicado en 'Object Repository/Appointment/Book Appointment Button'
+ * 10. Verifica que el div de confirmación de la cita esté presente ubicado en 'Object Repository/Appointment/Appointment Confirmation' con una espera de 10 segundos
+ */
+// 1. Open the browser and navigate to the specified URL
+WebUI.openBrowser('')
+WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
+
+// 2. Click on the 'Make Appointment' button
+WebUI.click(findTestObject('Object Repository/Appointment/Make Appointment Button'))
+
+// 3. Fill the username field with the text 'John Doe'
+WebUI.setText(findTestObject('Object Repository/Appointment/User Input'), 'John Doe')
+
+// 4. Fill the user password field with the text 'ThisIsNotAPassword'
+WebUI.setText(findTestObject('Object Repository/Appointment/Password Input'), 'ThisIsNotAPassword')
+
+// 5. Click on the 'Login' button
+WebUI.click(findTestObject('Object Repository/Appointment/Login Button'))
+
+// 6. Click on the calendar
+WebUI.click(findTestObject('Object Repository/Appointment/Calendar Button'))
+
+// 7. Select the day on the calendar
+WebUI.click(findTestObject('Object Repository/Appointment/Select Day'))
+
+// 8. Fill the comments field with the text 'Test Comentario'
+WebUI.setText(findTestObject('Object Repository/Appointment/Comment Input'), 'Test Comentario')
+
+// 9. Click on the 'Book Appointment' button
+WebUI.click(findTestObject('Object Repository/Appointment/Book Appointment Button'))
+
+// 10. Verify that the appointment confirmation div is present with a wait of 10 seconds
+WebUI.waitForElementPresent(findTestObject('Object Repository/Appointment/Appointment Confirmation'), 10)
