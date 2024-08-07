@@ -35,6 +35,7 @@ public class AppointmentStep {
 		WebUI.click(findTestObject('Object Repository/Appointment/Login button'))
 	}
 
+
 	@When ("el asegurado completa los datos para realizar una reserva (.*)")
 	def HacerReservaDeCita(String comment) {
 		WebUI.click(findTestObject('Object Repository/Appointment/Calendar Button'))

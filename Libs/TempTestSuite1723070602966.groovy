@@ -13,11 +13,11 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
-suiteProperties.put('id', 'Test Suites/Cucumber Test-Suite')
-suiteProperties.put('name', 'Cucumber Test-Suite')
+suiteProperties.put('id', 'Test Suites/Self-Healing')
+suiteProperties.put('name', 'Self-Healing')
 suiteProperties.put('description', '')
 suiteProperties.put('rerunTestFailImmediately', 'true')
-suiteProperties.put('retryCount', '0')
+suiteProperties.put('retryCount', '3')
  
 
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.webui.contribution.WebUiDriverCleaner())
@@ -28,8 +28,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.t
 
 
 
-RunConfiguration.setExecutionSettingFile("/Users/richard/Example-BDD-with-Katalon-Studio/Reports/20240807_171002/Cucumber Test-Suite/20240807_171003/execution.properties")
+RunConfiguration.setExecutionSettingFile("/Users/richard/Example-BDD-with-Katalon-Studio/Reports/20240807_184321/Self-Healing/20240807_184322/execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/Cucumber Test-Suite', suiteProperties, new File("/Users/richard/Example-BDD-with-Katalon-Studio/Reports/20240807_171002/Cucumber Test-Suite/20240807_171003/testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/Self-Healing', suiteProperties, new File("/Users/richard/Example-BDD-with-Katalon-Studio/Reports/20240807_184321/Self-Healing/20240807_184322/testCaseBinding"))

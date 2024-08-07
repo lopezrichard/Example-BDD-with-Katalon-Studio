@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>AI Suite</name>
+   <name>1 Cucumber Suite</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
-   <numberOfRerun>3</numberOfRerun>
+   <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>5ab0eb33-5118-4cd2-9304-6970ed85fa5e</testSuiteGuid>
+   <testSuiteGuid>0762c4f0-ecc4-4c4f-a087-60062a247429</testSuiteGuid>
    <testCaseLink>
-      <guid>58aa9a9e-caf4-40c0-953f-e7da79c85b33</guid>
+      <guid>cf6f3a90-d4b3-443a-980e-c1dff9dc4a40</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/AI</testCaseId>
+      <testCaseId>Test Cases/1 Cucumber</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

@@ -13,11 +13,11 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
-suiteProperties.put('id', 'Test Suites/Test Suite')
-suiteProperties.put('name', 'Test Suite')
+suiteProperties.put('id', 'Test Suites/2 StudioAssist Suite')
+suiteProperties.put('name', '2 StudioAssist Suite')
 suiteProperties.put('description', '')
 suiteProperties.put('rerunTestFailImmediately', 'true')
-suiteProperties.put('retryCount', '0')
+suiteProperties.put('retryCount', '3')
  
 
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.webui.contribution.WebUiDriverCleaner())
@@ -28,8 +28,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.t
 
 
 
-RunConfiguration.setExecutionSettingFile("/Users/richard/Example-BDD-with-Katalon-Studio/Reports/20240807_170721/Test Suite/20240807_170722/execution.properties")
+RunConfiguration.setExecutionSettingFile("/Users/richard/Example-BDD-with-Katalon-Studio/Reports/20240807_185106/2 StudioAssist Suite/20240807_185107/execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/Test Suite', suiteProperties, new File("/Users/richard/Example-BDD-with-Katalon-Studio/Reports/20240807_170721/Test Suite/20240807_170722/testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/2 StudioAssist Suite', suiteProperties, new File("/Users/richard/Example-BDD-with-Katalon-Studio/Reports/20240807_185106/2 StudioAssist Suite/20240807_185107/testCaseBinding"))
