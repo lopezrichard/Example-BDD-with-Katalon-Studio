@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+4 Visual Testing Suite,Chrome 127.0.0.0,,,07-08-2024 18:53:19,07-08-2024 18:53:29,10.200s,PASSED
+,,,,,,,
+Test Cases/4 Visual Testing,Chrome 127.0.0.0,,,07-08-2024 18:53:19,07-08-2024 18:53:29,10.146s,PASSED
+Start listener action : setup,Chrome 127.0.0.0,,,07-08-2024 18:53:19,07-08-2024 18:53:19,0.033s,PASSED
+"openBrowser(""https://katalon-demo-cura.herokuapp.com/"")",Chrome 127.0.0.0,,,07-08-2024 18:53:19,07-08-2024 18:53:23,4.061s,PASSED
+"click(findTestObject(""Appointment/Make Appointment Button""))",Chrome 127.0.0.0,,,07-08-2024 18:53:23,07-08-2024 18:53:24,0.596s,PASSED
+"setText(findTestObject(""Object Repository/Appointment/User Input""), ""John Doe"")",Chrome 127.0.0.0,,,07-08-2024 18:53:24,07-08-2024 18:53:24,0.697s,PASSED
+"setText(findTestObject(""Object Repository/Appointment/Password Input""), ""ThisIsNotAPassword"")",Chrome 127.0.0.0,,,07-08-2024 18:53:24,07-08-2024 18:53:25,0.511s,PASSED
+"takeScreenshotAsCheckpoint(""full_view-2"", CONTINUE_ON_FAILURE)",Chrome 127.0.0.0,,,07-08-2024 18:53:25,07-08-2024 18:53:25,0.397s,PASSED
+"click(findTestObject(""Object Repository/Appointment/Login button""))",Chrome 127.0.0.0,,,07-08-2024 18:53:25,07-08-2024 18:53:26,0.685s,PASSED
+"takeFullPageScreenshotAsCheckpoint(""current_viewport-2"", CONTINUE_ON_FAILURE)",Chrome 127.0.0.0,,,07-08-2024 18:53:26,07-08-2024 18:53:27,0.607s,PASSED
+"click(findTestObject(""Object Repository/Appointment/Calendar Button""))",Chrome 127.0.0.0,,,07-08-2024 18:53:27,07-08-2024 18:53:27,0.268s,PASSED
+"click(findTestObject(""Object Repository/Appointment/Select Day""))",Chrome 127.0.0.0,,,07-08-2024 18:53:27,07-08-2024 18:53:27,0.457s,PASSED
+"setText(findTestObject(""Object Repository/Appointment/Comment Input""), ""Test Comentario"")",Chrome 127.0.0.0,,,07-08-2024 18:53:27,07-08-2024 18:53:28,0.708s,PASSED
+"click(findTestObject(""Object Repository/Appointment/Book Appointment Button""))",Chrome 127.0.0.0,,,07-08-2024 18:53:28,07-08-2024 18:53:29,0.500s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Appointment/Appointment Confirmation""), 20)",Chrome 127.0.0.0,,,07-08-2024 18:53:29,07-08-2024 18:53:29,0.438s,PASSED
+Start listener action : after,Chrome 127.0.0.0,,,07-08-2024 18:53:29,07-08-2024 18:53:29,0.105s,PASSED

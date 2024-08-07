@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Cucumber Suite" time="9.42" tests="1" failures="0" errors="0">
+   <testsuite name="Cucumber Suite" tests="1" failures="0" errors="0" time="9.42" skipped="0" timestamp="07-08-2024T18:50:11" hostname="richard - localhost" id="Test Suites/Cucumber Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="/Users/richard/Example-BDD-with-Katalon-Studio/Reports/20240807_185005/Cucumber Suite/20240807_185005"/>
+         <property name="logFiles" value="/Users/richard/Example-BDD-with-Katalon-Studio/Reports/20240807_185005/Cucumber Suite/20240807_185005/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="richard - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.6.0.217"/>
+         <property name="browser" value="Chrome 127.0.0.0"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="e93c39b87e6aeb8bf1c792a644be2eb1"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/1 Cucumber" time="9.372" classname="Test Cases/1 Cucumber" status="PASSED">
+         <system-out><![CDATA[07-08-2024T18:50:11 - [TEST_CASE][PASSED] - Test Cases/1 Cucumber: Test Cases/1 Cucumber
+
+07-08-2024T18:50:11 - [TEST_STEP][PASSED] - Start listener action : setup: null
+
+07-08-2024T18:50:11 - [TEST_STEP][PASSED] - addDefaultPackages(): null
+
+07-08-2024T18:50:11 - [TEST_STEP][PASSED] - runFeatureFile("Include/features/Appointment/Appointment.feature"): Feature file: 'Include/features/Appointment/Appointment.feature' was passed
+
+07-08-2024T18:50:11 - [MESSAGE][INFO] - Starting run keyword runFeatureFile: 'Include/features/Appointment/Appointment.feature' and extract report to folder: '/Users/richard/Example-BDD-with-Katalon-Studio/Reports/20240807_185005/Cucumber Suite/20240807_185005/cucumber_report/1723071011940'...
+
+07-08-2024T18:50:12 - [TEST_CASE][PASSED] - Start Test Case : SCENARIO Realizar una cita medica de un cliente: SCENARIO Realizar una cita medica de un cliente
+
+07-08-2024T18:50:12 - [TEST_STEP][PASSED] - que nuesto cliente ingresa correctamente a nuestra plataforma John Doe ThisIsNotAPassword: que nuesto cliente ingresa correctamente a nuestra plataforma John Doe ThisIsNotAPassword
+
+07-08-2024T18:50:12 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+07-08-2024T18:50:12 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+07-08-2024T18:50:16 - [MESSAGE][PASSED] - Browser is opened with url: 'https://katalon-demo-cura.herokuapp.com/'
+
+07-08-2024T18:50:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Appointment/Make Appointment Button' is clicked on
+
+07-08-2024T18:50:17 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Appointment/User Input'
+
+07-08-2024T18:50:17 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Appointment/Password Input'
+
+07-08-2024T18:50:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Appointment/Login button' is clicked on
+
+07-08-2024T18:50:18 - [MESSAGE][PASSED] - que nuesto cliente ingresa correctamente a nuestra plataforma John Doe ThisIsNotAPassword
+
+07-08-2024T18:50:18 - [TEST_STEP][PASSED] - el asegurado completa los datos para realizar una reserva Quiero realizar un cita medica: el asegurado completa los datos para realizar una reserva Quiero realizar un cita medica
+
+07-08-2024T18:50:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Appointment/Calendar Button' is clicked on
+
+07-08-2024T18:50:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Appointment/Select Day' is clicked on
+
+07-08-2024T18:50:20 - [MESSAGE][PASSED] - Text 'Quiero realizar un cita medica' is set on object 'Object Repository/Appointment/Comment Input'
+
+07-08-2024T18:50:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Appointment/Book Appointment Button' is clicked on
+
+07-08-2024T18:50:20 - [MESSAGE][PASSED] - el asegurado completa los datos para realizar una reserva Quiero realizar un cita medica
+
+07-08-2024T18:50:20 - [TEST_STEP][PASSED] - se visualiza un mensaje de confirmacion 'Appointment Confirmation': se visualiza un mensaje de confirmacion 'Appointment Confirmation'
+
+07-08-2024T18:50:21 - [MESSAGE][PASSED] - Object 'Object Repository/Appointment/Appointment Confirmation' is present
+
+07-08-2024T18:50:21 - [MESSAGE][PASSED] - se visualiza un mensaje de confirmacion 'Appointment Confirmation'
+
+07-08-2024T18:50:21 - [MESSAGE][PASSED] - Feature file: 'Include/features/Appointment/Appointment.feature' was passed
+
+07-08-2024T18:50:21 - [TEST_STEP][PASSED] - Start listener action : after: Browser is closed
+
+07-08-2024T18:50:21 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+07-08-2024T18:50:21 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[07-08-2024T18:50:11 - [TEST_SUITE][PASSED] - Cucumber Suite: Test Cases/1 Cucumber]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

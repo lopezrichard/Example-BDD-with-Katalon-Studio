@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+2 StudioAssist Suite,Chrome 127.0.0.0,,,07-08-2024 19:00:48,07-08-2024 19:00:58,9.506s,PASSED
+,,,,,,,
+Test Cases/2 StudioAssist,Chrome 127.0.0.0,,,07-08-2024 19:00:49,07-08-2024 19:00:58,9.436s,PASSED
+Start listener action : setup,Chrome 127.0.0.0,,,07-08-2024 19:00:49,07-08-2024 19:00:49,0.033s,PASSED
+"openBrowser("""")",Chrome 127.0.0.0,,,07-08-2024 19:00:49,07-08-2024 19:00:51,2.104s,PASSED
+"navigateToUrl(""https://katalon-demo-cura.herokuapp.com/"")",Chrome 127.0.0.0,,,07-08-2024 19:00:51,07-08-2024 19:00:53,2.189s,PASSED
+"click(findTestObject(""Appointment/Make Appointment Button""))",Chrome 127.0.0.0,,,07-08-2024 19:00:53,07-08-2024 19:00:54,0.619s,PASSED
+"setText(findTestObject(""Appointment/User Input""), ""John Doe"")",Chrome 127.0.0.0,,,07-08-2024 19:00:54,07-08-2024 19:00:54,0.661s,PASSED
+"setText(findTestObject(""Appointment/Password Input""), ""ThisIsNotAPassword"")",Chrome 127.0.0.0,,,07-08-2024 19:00:54,07-08-2024 19:00:55,0.483s,PASSED
+"click(findTestObject(""Appointment/Login Button""))",Chrome 127.0.0.0,,,07-08-2024 19:00:55,07-08-2024 19:00:55,0.665s,PASSED
+"click(findTestObject(""Appointment/Calendar Button""))",Chrome 127.0.0.0,,,07-08-2024 19:00:55,07-08-2024 19:00:56,0.457s,PASSED
+"click(findTestObject(""Appointment/Select Day""))",Chrome 127.0.0.0,,,07-08-2024 19:00:56,07-08-2024 19:00:56,0.451s,PASSED
+"setText(findTestObject(""Appointment/Comment Input""), ""Test Comentario"")",Chrome 127.0.0.0,,,07-08-2024 19:00:56,07-08-2024 19:00:57,0.684s,PASSED
+"click(findTestObject(""Appointment/Book Appointment Button""))",Chrome 127.0.0.0,,,07-08-2024 19:00:57,07-08-2024 19:00:57,0.494s,PASSED
+"waitForElementPresent(findTestObject(""Appointment/Appointment Confirmation""), 10)",Chrome 127.0.0.0,,,07-08-2024 19:00:57,07-08-2024 19:00:58,0.447s,PASSED
+Start listener action : after,Chrome 127.0.0.0,,,07-08-2024 19:00:58,07-08-2024 19:00:58,0.098s,PASSED

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="4 Visual Testing Suite" time="10.2" tests="1" failures="0" errors="0">
+   <testsuite name="4 Visual Testing Suite" tests="1" failures="0" errors="0" time="10.2" skipped="0" timestamp="07-08-2024T18:53:19" hostname="richard - localhost" id="Test Suites/4 Visual Testing Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="/Users/richard/Example-BDD-with-Katalon-Studio/Reports/20240807_185314/4 Visual Testing Suite/20240807_185315"/>
+         <property name="logFiles" value="/Users/richard/Example-BDD-with-Katalon-Studio/Reports/20240807_185314/4 Visual Testing Suite/20240807_185315/execution0.log"/>
+         <property name="attachments" value="keyes/keyes-full_view-2.png, keyes/keyes-current_viewport-2.png"/>
+         <property name="hostName" value="richard - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.6.0.217"/>
+         <property name="browser" value="Chrome 127.0.0.0"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="sessionId" value="6350fe23aa1e9fc94e01a2a8541aa277"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/4 Visual Testing" time="10.146" classname="Test Cases/4 Visual Testing" status="PASSED">
+         <system-out><![CDATA[07-08-2024T18:53:19 - [TEST_CASE][PASSED] - Test Cases/4 Visual Testing: Test Cases/4 Visual Testing
+
+07-08-2024T18:53:19 - [TEST_STEP][PASSED] - Start listener action : setup: null
+
+07-08-2024T18:53:19 - [TEST_STEP][PASSED] - addDefaultPackages(): null
+
+07-08-2024T18:53:19 - [TEST_STEP][PASSED] - openBrowser("https://katalon-demo-cura.herokuapp.com/"): Browser is opened with url: 'https://katalon-demo-cura.herokuapp.com/'
+
+07-08-2024T18:53:19 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+07-08-2024T18:53:19 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+07-08-2024T18:53:23 - [MESSAGE][PASSED] - Browser is opened with url: 'https://katalon-demo-cura.herokuapp.com/'
+
+07-08-2024T18:53:23 - [TEST_STEP][PASSED] - click(findTestObject("Appointment/Make Appointment Button")): Object: 'Object Repository/Appointment/Make Appointment Button' is clicked on
+
+07-08-2024T18:53:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Appointment/Make Appointment Button' is clicked on
+
+07-08-2024T18:53:24 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Appointment/User Input"), "John Doe"): Text 'John Doe' is set on object 'Object Repository/Appointment/User Input'
+
+07-08-2024T18:53:24 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Appointment/User Input'
+
+07-08-2024T18:53:24 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Appointment/Password Input"), "ThisIsNotAPassword"): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Appointment/Password Input'
+
+07-08-2024T18:53:25 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Appointment/Password Input'
+
+07-08-2024T18:53:25 - [TEST_STEP][PASSED] - takeScreenshotAsCheckpoint("full_view-2", CONTINUE_ON_FAILURE): Taking screenshot successfully
+
+07-08-2024T18:53:25 - [MESSAGE][INFO] - 0 hidden object(s)
+
+07-08-2024T18:53:25 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|keyes/keyes-full_view-2.png]]
+
+07-08-2024T18:53:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Appointment/Login button")): Object: 'Object Repository/Appointment/Login button' is clicked on
+
+07-08-2024T18:53:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Appointment/Login button' is clicked on
+
+07-08-2024T18:53:26 - [TEST_STEP][PASSED] - takeFullPageScreenshotAsCheckpoint("current_viewport-2", CONTINUE_ON_FAILURE): Taking screenshot successfully
+
+07-08-2024T18:53:26 - [MESSAGE][INFO] - 0 hidden object(s)
+
+07-08-2024T18:53:27 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|keyes/keyes-current_viewport-2.png]]
+
+07-08-2024T18:53:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Appointment/Calendar Button")): Object: 'Object Repository/Appointment/Calendar Button' is clicked on
+
+07-08-2024T18:53:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Appointment/Calendar Button' is clicked on
+
+07-08-2024T18:53:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Appointment/Select Day")): Object: 'Object Repository/Appointment/Select Day' is clicked on
+
+07-08-2024T18:53:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Appointment/Select Day' is clicked on
+
+07-08-2024T18:53:27 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Appointment/Comment Input"), "Test Comentario"): Text 'Test Comentario' is set on object 'Object Repository/Appointment/Comment Input'
+
+07-08-2024T18:53:28 - [MESSAGE][PASSED] - Text 'Test Comentario' is set on object 'Object Repository/Appointment/Comment Input'
+
+07-08-2024T18:53:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Appointment/Book Appointment Button")): Object: 'Object Repository/Appointment/Book Appointment Button' is clicked on
+
+07-08-2024T18:53:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Appointment/Book Appointment Button' is clicked on
+
+07-08-2024T18:53:29 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Appointment/Appointment Confirmation"), 20): Object 'Object Repository/Appointment/Appointment Confirmation' is present
+
+07-08-2024T18:53:29 - [MESSAGE][PASSED] - Object 'Object Repository/Appointment/Appointment Confirmation' is present
+
+07-08-2024T18:53:29 - [TEST_STEP][PASSED] - Start listener action : after: Browser is closed
+
+07-08-2024T18:53:29 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+07-08-2024T18:53:29 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[07-08-2024T18:53:19 - [TEST_SUITE][PASSED] - 4 Visual Testing Suite: Test Cases/4 Visual Testing]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

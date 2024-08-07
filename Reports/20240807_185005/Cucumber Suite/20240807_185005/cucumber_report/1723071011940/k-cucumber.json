@@ -1,0 +1,90 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "BDD_TESTRUN_UUID": "37841f77-887b-4f71-ae9a-f5a2bdcacc75",
+        "line": 11,
+        "name": "Realizar una cita medica de un cliente",
+        "description": "",
+        "id": "appointment;realizar-una-cita-medica-de-un-cliente;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6462764709,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "que nuesto cliente ingresa correctamente a nuestra plataforma John Doe ThisIsNotAPassword",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John Doe",
+                  "offset": 62
+                },
+                {
+                  "val": "ThisIsNotAPassword",
+                  "offset": 71
+                }
+              ],
+              "location": "AppointmentStep.RealizarLoginEnLaPlataforma(String,String)"
+            },
+            "keyword": "Given ",
+            "BDD_STEP_UUID": "82f49cb5-3abb-47d0-b575-a266963ea0f3"
+          },
+          {
+            "result": {
+              "duration": 2053194000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "el asegurado completa los datos para realizar una reserva Quiero realizar un cita medica",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Quiero realizar un cita medica",
+                  "offset": 58
+                }
+              ],
+              "location": "AppointmentStep.HacerReservaDeCita(String)"
+            },
+            "keyword": "When ",
+            "BDD_STEP_UUID": "89bb74ce-4bd4-46ac-a609-918b61757a58"
+          },
+          {
+            "result": {
+              "duration": 432654833,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "se visualiza un mensaje de confirmacion \u0027Appointment Confirmation\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Appointment Confirmation",
+                  "offset": 41
+                }
+              ],
+              "location": "AppointmentStep.VisualizacionDeCitaConfirmada(String)"
+            },
+            "keyword": "Then ",
+            "BDD_STEP_UUID": "081896c6-b5cb-474b-807b-7c00b77b0f45"
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ID_01"
+          }
+        ]
+      }
+    ],
+    "name": "Appointment",
+    "description": "",
+    "id": "appointment",
+    "keyword": "Feature",
+    "uri": "/Users/richard/Example-BDD-with-Katalon-Studio/Include/features/Appointment/Appointment.feature",
+    "tags": []
+  }
+]

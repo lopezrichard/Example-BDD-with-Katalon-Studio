@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+2 StudioAssist Suite,,,,07-08-2024 18:51:11,07-08-2024 18:51:11,0.212s,PASSED
+,,,,,,,
+Test Cases/2 StudioAssist,,,,07-08-2024 18:51:11,07-08-2024 18:51:11,0.156s,PASSED
+Start listener action : setup,,,,07-08-2024 18:51:11,07-08-2024 18:51:11,0.033s,PASSED
+return null,,,,07-08-2024 18:51:11,07-08-2024 18:51:11,0.000s,PASSED
+Start listener action : after,,,,07-08-2024 18:51:11,07-08-2024 18:51:11,0.084s,PASSED

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>CucumberTest</name>
+   <name>3 Selft-Healing</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>23e2f5da-77b0-4a36-acdf-b16ed6c6b91f</testCaseGuid>
+   <testCaseGuid>13ebfbca-c3de-436c-be5d-168a46bce4ac</testCaseGuid>
 </TestCaseEntity>

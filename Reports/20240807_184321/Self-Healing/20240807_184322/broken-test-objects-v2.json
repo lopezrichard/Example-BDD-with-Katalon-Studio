@@ -1,0 +1,14 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Self-Healing/Page_CURA Healthcare Service/input_Password_password",
+      "brokenLocator": "//input[@id\u003d\u0027txt-passworddd\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//input[@id\u003d\u0027txt-password\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/20240807_184321/Self-Healing/20240807_184322/Object Repository/Self-Healing/Page_CURA Healthcare Service/input_Password_password_attributes.png"
+    }
+  ]
+}

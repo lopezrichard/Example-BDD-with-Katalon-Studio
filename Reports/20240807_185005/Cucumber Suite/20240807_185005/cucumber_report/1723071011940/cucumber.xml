@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="8.95955">
+    <testcase classname="Appointment" name="Realizar una cita medica de un cliente" time="8.95955">
+        <system-out><![CDATA[Given que nuesto cliente ingresa correctamente a nuestra plataforma John Doe ThisIsNotAPassword.passed
+When el asegurado completa los datos para realizar una reserva Quiero realizar un cita medica.passed
+Then se visualiza un mensaje de confirmacion 'Appointment Confirmation'.....passed
+]]></system-out>
+    </testcase>
+</testsuite>

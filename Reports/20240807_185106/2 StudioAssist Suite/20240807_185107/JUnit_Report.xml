@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="2 StudioAssist Suite" time="0.212" tests="1" failures="0" errors="0">
+   <testsuite name="2 StudioAssist Suite" tests="1" failures="0" errors="0" time="0.212" skipped="0" timestamp="07-08-2024T18:51:11" hostname="richard - localhost" id="Test Suites/2 StudioAssist Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="/Users/richard/Example-BDD-with-Katalon-Studio/Reports/20240807_185106/2 StudioAssist Suite/20240807_185107"/>
+         <property name="logFiles" value="/Users/richard/Example-BDD-with-Katalon-Studio/Reports/20240807_185106/2 StudioAssist Suite/20240807_185107/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="richard - localhost"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="9.6.0.217"/>
+      </properties>
+      <testcase name="Test Cases/2 StudioAssist" time="0.156" classname="Test Cases/2 StudioAssist" status="PASSED">
+         <system-out><![CDATA[07-08-2024T18:51:11 - [TEST_CASE][PASSED] - Test Cases/2 StudioAssist: Test Cases/2 StudioAssist
+
+07-08-2024T18:51:11 - [TEST_STEP][PASSED] - Start listener action : setup: null
+
+07-08-2024T18:51:11 - [TEST_STEP][PASSED] - addDefaultPackages(): null
+
+07-08-2024T18:51:11 - [TEST_STEP][PASSED] - return null: null
+
+07-08-2024T18:51:11 - [TEST_STEP][PASSED] - Start listener action : after: Browser is closed
+
+07-08-2024T18:51:11 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+07-08-2024T18:51:11 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[07-08-2024T18:51:11 - [TEST_SUITE][PASSED] - 2 StudioAssist Suite: Test Cases/2 StudioAssist]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
