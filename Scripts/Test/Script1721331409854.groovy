@@ -22,6 +22,7 @@ WebUI.openBrowser('https://katalon-demo-cura.herokuapp.com/')
 
 WebUI.click(findTestObject('Appointment/Make Appointment Button'))
 WebUI.setText(findTestObject('Object Repository/Appointment/User Input'), 'John Doe')
+
 WebUI.setText(findTestObject('Object Repository/Appointment/Password Input'), 'ThisIsNotAPassword')
 
 WebUI.takeScreenshotAsCheckpoint('full_view-2', FailureHandling.CONTINUE_ON_FAILURE)
@@ -36,3 +37,4 @@ WebUI.setText(findTestObject('Object Repository/Appointment/Comment Input'), 'Te
 WebUI.click(findTestObject('Object Repository/Appointment/Book Appointment Button'))
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Appointment/Appointment Confirmation'), 20)
+

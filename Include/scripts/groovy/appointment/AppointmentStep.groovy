@@ -32,7 +32,6 @@ public class AppointmentStep {
 		WebUI.click(findTestObject('Appointment/Make Appointment Button'))
 		WebUI.setText(findTestObject('Object Repository/Appointment/User Input'), user)
 		WebUI.setText(findTestObject('Object Repository/Appointment/Password Input'), password)
-		WebUI.takeFullPageScreenshotAsCheckpoint('current_viewport')
 		WebUI.click(findTestObject('Object Repository/Appointment/Login button'))
 	}
 
