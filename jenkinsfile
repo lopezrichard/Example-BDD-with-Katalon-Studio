@@ -1,0 +1,291 @@
+pipeline {
+    agent any
+
+    parameters {
+        string(name: 'TEST_SUITE_PATH', defaultValue: 'Test Suites/richard', description: 'Ruta del suite de pruebas')
+        string(name: 'BROWSER_TYPE', defaultValue: 'Chrome', description: 'Selecciona el navegador: Chrome, Firefox')
+        string(name: 'EXECUTION_PROFILE', defaultValue: 'default', description: 'Perfil de ejecución de Katalon')
+        
+    }
+
+    environment {
+        KATALON_API_KEY = '53affab5-d9db-467b-86f8-789b9789b8de'
+        TEST_OPS_PROJECT_ID = '1607476'
+        EMAIL_RECIPIENT = 'richard.lopez@ecosistemas.com.ar'
+    }
+
+    stages {
+        stage('Pull GitHub') {
+            steps {
+                cleanWs()  
+                git(
+                    url: 'https://github.com/lopezrichard/Example-BDD-with-Katalon-Studio/',
+                    credentialsId: 'Github',
+                    branch: 'main'
+                )
+            }
+        }
+stage('Find .prj File') {
+            steps {
+                script {
+                    def prjFile = sh(script: "find \$(pwd) -maxdepth 1 -name '*.prj'", returnStdout: true).trim()
+
+                    if (prjFile) {
+                        echo "Archivo .prj encontrado: ${prjFile}"
+                        env.PRJ_PATH = prjFile 
+                    } else {
+                        error "No se encontró ningún archivo .prj en la raíz del proyecto"
+                    }
+                }
+            }
+        }
+
+        stage('Test') {
+            steps {
+                dir('.') {
+                    script {
+                        def katalonOutput = sh(script: """
+                            docker run -t --rm -v "\$(pwd)":/tmp/project katalonstudio/katalon katalonc.sh \\
+                            -noSplash -runMode=console \\
+                            -projectPath="/tmp/project/${sh(script: "basename ${env.PRJ_PATH}", returnStdout: true).trim()}" \\
+                            -retry=0 -testSuitePath="${params.TEST_SUITE_PATH}" \\
+                            -browserType="${params.BROWSER_TYPE}" \\
+                            -executionProfile="${params.EXECUTION_PROFILE}" \\
+                            -apiKey="${env.KATALON_API_KEY}" \\
+                            -testOpsProjectId="${env.TEST_OPS_PROJECT_ID}" \\
+                            --config -proxy.auth.option=NO_PROXY \\
+                            -proxy.system.option=NO_PROXY \\
+                            -proxy.system.applyToDesiredCapabilities=true \\
+                            -webui.autoUpdateDrivers=true
+                        """, returnStdout: true).trim()
+
+                        def testOpsExecutionLink = katalonOutput.find(/https:\/\/testops.katalon.io\/from-ks\/execution-result\?teamId=\d+&projectId=\d+&id=\d+/)
+                        
+                        if (testOpsExecutionLink) {
+                            echo "TestOps Execution URL: ${testOpsExecutionLink}"
+                            writeFile file: 'testOpsExecutionLink.txt', text: testOpsExecutionLink
+                        } else {
+                            error "No se encontró el enlace de TestOps Execution"
+                        }
+                    }
+                }
+            }
+        }
+
+        stage('Buscar Reporte Dinámicamente') {
+            steps {
+                script {
+                    def reportPath = sh(script: "find ${env.WORKSPACE}/Reports/ -name 'JUnit_Report.xml'", returnStdout: true).trim()
+
+                    if (reportPath) {
+                        echo "Reporte encontrado en: ${reportPath}"
+                        writeFile file: 'report_path.txt', text: reportPath
+                    } else {
+                        error "No se encontró el archivo JUnit_Report.xml"
+                    }
+                }
+            }
+        }
+
+        stage('Generar Reporte y Enviar Correo') {
+            steps {
+                script {
+                    def reportPath = readFile('report_path.txt').trim()
+                    def junitXml = readFile(reportPath)
+                    def testOpsExecutionLink = readFile('testOpsExecutionLink.txt').trim()
+
+                    def totalTests = 0
+                    def passedTests = 0
+                    def failedTests = 0
+                    def errorTests = 0
+
+                    new XmlSlurper().parseText(junitXml).'**'.findAll { it.name() == 'testcase' }.each { testCase ->
+                        totalTests++
+                        if (testCase.'**'.find { it.name() == 'failure' }) {
+                            failedTests++
+                        } else if (testCase.'**'.find { it.name() == 'error' }) {
+                            errorTests++
+                        } else {
+                            passedTests++
+                        }
+                    }
+
+                    def hostName = sh(script: 'hostname', returnStdout: true).trim()
+                    def os = sh(script: 'uname -s', returnStdout: true).trim()
+
+                    def emailBody = """
+						<html>
+							<head>
+							    <style>
+							        body {
+							            font-family: 'Arial', sans-serif;
+							            color: #333;
+							            background-color: #f4f7f9;
+							            padding: 40px;
+							            margin: 0;
+							        }
+							        h2 {
+							            color: #2c3e50;
+							            font-size: 28px;
+							            margin-bottom: 10px;
+							        }
+							        .container {
+							            max-width: 800px;
+							            margin: auto;
+							            background-color: white;
+							            padding: 30px;
+							            border-radius: 10px;
+							            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+							        }
+							        .header {
+							            background-color: #3498db;
+							            color: white;
+							            padding: 20px;
+							            border-radius: 10px 10px 0 0;
+							            text-align: center;
+							            font-size: 24px;
+							        }
+							        .content {
+							            margin: 20px 0;
+							        }
+							        .content p {
+							            font-size: 18px;
+							            color: #555;
+							        }
+							        table {
+							            width: 100%;
+							            border-collapse: collapse;
+							            margin-bottom: 20px;
+							        }
+							        th, td {
+							            padding: 12px;
+							            text-align: left;
+							            border-bottom: 1px solid #ddd;
+							        }
+							        th {
+							            background-color: #f8f9fa;
+							            color: #2c3e50;
+							            font-weight: bold;
+							        }
+							        td {
+							            color: #7f8c8d;
+							        }
+							        .status {
+							            font-weight: bold;
+							            padding: 10px;
+							            border-radius: 5px;
+							            text-align: center;
+							        }
+							        .success {
+							            color: #27ae60;
+							            background-color: #ecf9f1;
+							        }
+							        .fail {
+							            color: #c0392b;
+							            background-color: #fcebeb;
+							        }
+							        .error {
+							            color: #e67e22;
+							            background-color: #fcf3e4;
+							        }
+							        .footer {
+							            text-align: center;
+							            font-size: 14px;
+							            color: #95a5a6;
+							            margin-top: 20px;
+							        }
+							        .report-link {
+							            color: #3498db;
+							            text-decoration: none;
+							            font-weight: bold;
+							        }
+							        .report-link:hover {
+							            text-decoration: underline;
+							        }
+							        .icon {
+							            font-size: 22px;
+							            margin-right: 5px;
+							            vertical-align: middle;
+							        }
+							    </style>
+							</head>
+							<body>
+							    <div class="container">
+							        <div class="header">
+							            <h2>📝 Test Execution Report</h2>
+							        </div>
+							        <div class="content">
+							            <p>The test suite execution has been completed successfully. Here are the details:</p>
+							            <table>
+							                <tr>
+							                    <th>Host Name</th>
+							                    <td>Richards-MacBook-Pro.local</td>
+							                </tr>
+							                <tr>
+							                    <th>Operating System</th>
+							                    <td>Darwin</td>
+							                </tr>
+							                <tr>
+							                    <th>Browser</th>
+							                    <td>Chrome</td>
+							                </tr>
+							                <tr>
+							                    <th>Test Suite</th>
+							                    <td>Test Suites/richard</td>
+							                </tr>
+							                <tr>
+							                    <th>Profile</th>
+							                    <td>default</td>
+							                </tr>
+							                <tr>
+							                    <th>Total Tests</th>
+							                    <td>2</td>
+							                </tr>
+							                <tr>
+							                    <th>Passed Tests</th>
+							                    <td class="status success"><i class="icon">✔</i> 2</td>
+							                </tr>
+							                <tr>
+							                    <th>Failed Tests</th>
+							                    <td class="status fail"><i class="icon">✘</i> 0</td>
+							                </tr>
+							                <tr>
+							                    <th>Errors</th>
+							                    <td class="status error"><i class="icon">⚠</i> 0</td>
+							                </tr>
+							            </table>
+							            <p><strong>Integration with TestOps:</strong> <a class="report-link" href="${testOpsExecutionLink}">View detailed report</a></p>
+							        </div>
+							        <div class="footer">
+							            <p>This email was generated automatically. Please do not reply.</p>
+							        </div>
+							    </div>
+							</body>
+							</html>
+
+							                        
+                    """
+
+
+                    emailext subject: "Reporte de Ejecución de Pruebas",
+                    body: emailBody, 
+                    mimeType: 'text/html', 
+                    to: "${env.EMAIL_RECIPIENT}"
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            archiveArtifacts artifacts: 'Reports/**/*.*', fingerprint: true
+            junit 'Reports/**/JUnit_Report.xml'
+        }
+        success {
+            echo 'La ejecución fue exitosa'
+        }
+        failure {
+            echo 'La ejecución falló'
+        }
+    }
+}
